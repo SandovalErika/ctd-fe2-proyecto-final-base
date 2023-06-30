@@ -17,6 +17,7 @@ const initialState: EstadoCita = {
 export const obtenerCitaAsync = createAsyncThunk(
   "cita/obtenerCita",
   async (personaje: string) => {
+    console.log('personaje', personaje)
     try {
       const cita = await obtenerCita(personaje);
 
@@ -53,6 +54,7 @@ export const { limpiar } = citaSlice.actions;
 
 export const obtenerCitaDeLaAPI =
   (personaje: string) => (dispatch: AppDispatch) => {
+    console.log('personaje', personaje)
     dispatch(limpiar());
     dispatch(obtenerCitaAsync(personaje));
   };

@@ -31,17 +31,19 @@ function Cita() {
       <AutorCita>{personaje}</AutorCita>
       <Input
         aria-label="Author Cita"
-        value={valorInput}
+        data-testid="dataInput"
+        value={valorInput ?? null}
         onChange={(e) => setValorInput(e.target.value)}
         placeholder="Ingresa el nombre del autor"
       />
       <Boton
+        data-testid="btn"
         aria-label={valorInput ? "Obtener Cita" : "Obtener cita aleatoria"}
         onClick={onClickObtenerCita}
       >
         {valorInput ? "Obtener Cita" : "Obtener cita aleatoria"}
       </Boton>
-      <Boton aria-label="Borrar" onClick={onClickBorrar} secondary={true}>
+      <Boton data-testid="btnClear" aria-label="Borrar" onClick={onClickBorrar} secondary={true}>
         Borrar
       </Boton>
     </ContenedorCita>

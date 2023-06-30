@@ -1,0 +1,28 @@
+[
+    {
+      "query": "ralp",
+      "result": {
+        "quote": "They taste like...burning.",
+        "character": "Ralph Wiggum",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FRalphWiggum.png?1497567511523"
+      }  
+    },
+    {
+      "query": "lisa",
+      "result": {
+        "quote": "Shut up, brain. I got friends now. I don't need you anymore.",
+        "character": "Lisa Simpson",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FLisaSimpson.png?1497567512083",
+        "characterDirection": "Right"
+      }  
+    },
+    {
+      "query": "apu",
+      "result": {
+        "quote": "Thank you. Come again.",
+        "character": "Apu Nahasapeemapetilon",
+        "image": "https://cdn.glitch.com/3c3ffadc-3406-4440-bb95-d40ec8fcde72%2FApuNahasapeemapetilon.png?1497567511629",
+        "characterDirection": "Left"
+      }  
+    }
+]
