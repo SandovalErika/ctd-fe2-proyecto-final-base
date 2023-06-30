@@ -9,10 +9,19 @@ import {
 import { INew } from "./interfaces/noticias.interface";
 
 
+// PRINCIPIOS SOLID APLICADOS
+// Primer principio SOLID, SINGLE RESPONSABILITY para dividir las responsabilidades del componente "Noticias"
+//     - El componente NoticiasContainer cumple con este principio al ser responsable de la lógica de obtener y transformar 
+//       los datos de noticias. Se encarga de realizar la llamada a obtenerNoticias, normalizar los datos obtenidos y luego 
+//       pasarlos al componente Noticias para su presentación.
+//     - El componente Noticias tiene la resposabilidad de obtener el listado de noticias.
+//     - El componente  CardNew tiene la responsabilidad de mostrar solo una tarjeta de noticia
+//     - El componente CardNew tiene la responsabilidad de mostrar el modal de la noticia que puede estar suscripto  o no.
+// Extraje las funciones para normalizar las noticias que recibe: capitalizeWords y calculateMinutes en la carpeta utils.
 
-// Aplicaque el primer principio SOLID, single responsability para liberar al componente "Noticias" de ciertas responsabilidades que no le eran propias.
-// En principio extraje las funciones para normalizar las noticias que recibe: capitalizeWords, calculateMinutes y noticias.mapper.
-// Por último extraje 3 componentes que pueden ser reutilizados y da más legibilidad al código: ModalPremium, ModalSubscripcion y CardNoticias.
+// Cuarto principio SOLID, PRINCIPIO DE SEGREGACION DE LA INTERFAZ, aplicando de manera indirecta el mismo ya que se 
+// separa en una carpeta aparte "interfaces" separando de acuerdo a cada componente y realizando en interfaces 
+// especializadas de cada funcionalidad.
 
 /**
  * Componente de listado de noticias.
